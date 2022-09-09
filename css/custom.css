@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "brand";
+  src: url("font/Pecita.otf");
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Raleway';
+  color: #333;
+  background-color: #f1f3f6;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 300;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+a:hover {
+  font-weight: 700;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.btn {
+  color: #333;
+  padding: 7px 15px;
+  border-radius: 6px;
+  border: 2px solid #333;
+  -webkit-box-shadow: 4px 4px 7px #d6d8db, -4px -4px 7px #ffffff;
+          box-shadow: 4px 4px 7px #d6d8db, -4px -4px 7px #ffffff;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 1px 1px 2px #d6d8db, -1px -1px 2px #ffffff;
+          box-shadow: 1px 1px 2px #d6d8db, -1px -1px 2px #ffffff;
+  padding: 8px 17px;
+  border: 2px solid #333 !important;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+header #azmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+}
+
+header #azmenu .brand {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro p {
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.intro p span {
+  font-weight: bold;
+}
+
+.intro h1 {
+  font-size: 50px;
+}
+/*# sourceMappingURL=custom.css.map */
