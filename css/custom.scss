@@ -13,6 +13,7 @@ body {
     font-size: 14px;
     font-weight: 300;
     font-family: 'Raleway';
+    letter-spacing: 4px;
     color: $dark_grey;
     background-color: $white;
 }
@@ -29,6 +30,10 @@ a {
   }
 }
 
+strong {
+    font-weight: bold;
+}
+
 .btn {
     color: $dark_grey;
     padding: 7px 15px;
@@ -43,6 +48,14 @@ a {
         border: 2px solid $dark_grey !important;
         transition: .5s ease-in-out;
     }
+
+    &.btn-circle {
+        padding: 10px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        // border: 1px solid #e6e9ee;
+    }
 }
 
 header {
@@ -55,7 +68,6 @@ header {
             text-transform: uppercase;
             font-size: 18px;
             font-weight: 700;
-            letter-spacing: 4px;
         }
     }
 }
@@ -63,18 +75,80 @@ header {
 section {
     display: flex;
     align-items: center;
+
+    &.vh-75 {
+        height: 75vh;
+    }
 }
 
-.intro {
-    p {
-        letter-spacing: 4px;
-        margin-bottom: 10px;
+.row {
+    align-items: center;
+}
 
-        span {
-            font-weight: bold;
-        }
-    }
+.title {
+
     h1 {
-        font-size: 50px;
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.project {
+    // height: 75vh;
+    // overflow-y: scroll;
+    // border-top: 1px solid $dark_grey;
+    margin-bottom: 50px;
+
+    .project__list {
+        border-bottom: 0px solid $white;
+        transition: .5s ease-in-out;
+
+        .project__list__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+    
+            h1 {
+                font-size: 60px;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        
+            p {
+                margin-bottom: 0;
+            }
+    
+            button {
+                transform: rotate(0deg);
+                transition: .5s ease-in-out;
+            }
+        }
+
+        .project__list__body {
+            padding: 20px 15px;
+
+            .row {
+                align-items: flex-start;
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    
+        &:hover {
+            border-bottom: 1px solid #b6b7b9;
+            transition: .5s ease-in-out;
+
+            button {
+                transform: rotate(90deg);
+                transition: .5s ease-in-out;
+            }
+        }
     }
 }
