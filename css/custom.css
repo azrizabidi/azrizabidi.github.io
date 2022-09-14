@@ -42,6 +42,7 @@ strong {
           box-shadow: 4px 4px 7px #d6d8db, -4px -4px 7px #ffffff;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+  min-width: 175px;
 }
 
 .btn:hover {
@@ -58,6 +59,9 @@ strong {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 header #azmenu {
@@ -104,17 +108,33 @@ section.vh-75 {
   margin-bottom: 10px;
 }
 
-.project {
+.tx-justify {
+  text-align: justify;
+  text-align-last: center;
+}
+
+.project,
+.employer {
   margin-bottom: 50px;
 }
 
-.project .project__list {
+.project .project__list,
+.project .employer__list,
+.employer .project__list,
+.employer .employer__list {
   border-bottom: 0px solid #f1f3f6;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
-.project .project__list .project__list__title {
+.project .project__list .project__list__title,
+.project .project__list .employer__list__title,
+.project .employer__list .project__list__title,
+.project .employer__list .employer__list__title,
+.employer .project__list .project__list__title,
+.employer .project__list .employer__list__title,
+.employer .employer__list .project__list__title,
+.employer .employer__list .employer__list__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,47 +147,105 @@ section.vh-75 {
   padding: 20px;
 }
 
-.project .project__list .project__list__title h1 {
+.project .project__list .project__list__title h1,
+.project .project__list .employer__list__title h1,
+.project .employer__list .project__list__title h1,
+.project .employer__list .employer__list__title h1,
+.employer .project__list .project__list__title h1,
+.employer .project__list .employer__list__title h1,
+.employer .employer__list .project__list__title h1,
+.employer .employer__list .employer__list__title h1 {
   font-size: 60px;
   font-weight: 600;
   margin-bottom: 0;
 }
 
-.project .project__list .project__list__title p {
+.project .project__list .project__list__title p,
+.project .project__list .employer__list__title p,
+.project .employer__list .project__list__title p,
+.project .employer__list .employer__list__title p,
+.employer .project__list .project__list__title p,
+.employer .project__list .employer__list__title p,
+.employer .employer__list .project__list__title p,
+.employer .employer__list .employer__list__title p {
   margin-bottom: 0;
 }
 
-.project .project__list .project__list__title button {
+.project .project__list .project__list__title button,
+.project .project__list .employer__list__title button,
+.project .employer__list .project__list__title button,
+.project .employer__list .employer__list__title button,
+.employer .project__list .project__list__title button,
+.employer .project__list .employer__list__title button,
+.employer .employer__list .project__list__title button,
+.employer .employer__list .employer__list__title button {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
-.project .project__list .project__list__body {
+.project .project__list .project__list__body,
+.project .project__list .employer__list__body,
+.project .employer__list .project__list__body,
+.project .employer__list .employer__list__body,
+.employer .project__list .project__list__body,
+.employer .project__list .employer__list__body,
+.employer .employer__list .project__list__body,
+.employer .employer__list .employer__list__body {
   padding: 20px 15px;
 }
 
-.project .project__list .project__list__body .row {
+.project .project__list .project__list__body .row,
+.project .project__list .employer__list__body .row,
+.project .employer__list .project__list__body .row,
+.project .employer__list .employer__list__body .row,
+.employer .project__list .project__list__body .row,
+.employer .project__list .employer__list__body .row,
+.employer .employer__list .project__list__body .row,
+.employer .employer__list .employer__list__body .row {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-.project .project__list .project__list__body .row h3 {
+.project .project__list .project__list__body .row h3,
+.project .project__list .employer__list__body .row h3,
+.project .employer__list .project__list__body .row h3,
+.project .employer__list .employer__list__body .row h3,
+.employer .project__list .project__list__body .row h3,
+.employer .project__list .employer__list__body .row h3,
+.employer .employer__list .project__list__body .row h3,
+.employer .employer__list .employer__list__body .row h3 {
   margin-bottom: 20px;
 }
 
-.project .project__list:hover {
+.project .project__list:hover,
+.project .employer__list:hover,
+.employer .project__list:hover,
+.employer .employer__list:hover {
   border-bottom: 1px solid #b6b7b9;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
-.project .project__list:hover button {
+.project .project__list:hover button,
+.project .employer__list:hover button,
+.employer .project__list:hover button,
+.employer .employer__list:hover button {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+}
+
+.about {
+  width: 70%;
+  margin: auto;
+}
+
+.about p {
+  text-align: justify;
+  text-align-last: center;
 }
 /*# sourceMappingURL=custom.css.map */
