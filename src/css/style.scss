@@ -1,0 +1,361 @@
+/*
+ * Item: Blake
+ * Description: Personal Portfolio Template
+ * Author/Developer: Azri Zabidi
+ * Version: v1.0.0
+ */
+
+
+/*    ==================
+ *    [Table Of Content]
+ *    ==================
+ *
+ *    1. Import & Declaration
+ *    2. Global Style
+ *    3. Theme Style
+ *    4. Header
+ *    5. Main Content
+ *        5.1 Home
+ *        5.2 About
+ *        5.3 Service
+ *        5.4 Works
+ *    5.5 Contact
+ *    6. Footer
+ *    7. Media Queries for Responsive Design
+ *
+ */
+
+
+/* ====================================
+   1. Import & Declaration
+   ==================================== */
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$white: #f1f3f6;
+$dark_grey: #333;
+
+$borderradius-xs : 2px 2px 4px #d6d8db, -2px -2px 4px #ffffff;
+$borderradius-sm : 4px 4px 7px #d6d8db, -4px -4px 7px #ffffff;
+$borderradius-md : 4px 4px 7px #d6d8db, -4px -4px 7px #ffffff; 
+
+
+/* ====================================
+   2. Global Style
+   ==================================== */
+
+html,
+body {
+    background-color: $white;
+    color: $dark_grey;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    height: 100%;
+    letter-spacing: 4px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+a {
+    color: $dark_grey;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+
+    &:hover {
+        color: #777;
+        transition: .5s ease-in-out;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.row {
+    align-items: center;
+}
+
+
+/* ====================================
+   3. Theme Style
+   ==================================== */
+
+.btn {
+    padding: .5rem 1rem;
+    border-radius: 3.125rem;
+    transition: .5s ease-in-out;
+    min-width: 11rem;
+
+    &.btn-white {
+        box-shadow: $borderradius-sm;
+        color: $dark_grey;
+        background-color: $white;
+
+        &:hover {
+            box-shadow: $borderradius-xs;
+            transition: .5s ease-in-out;
+        }
+    }
+
+    &.btn-circle {
+        padding: 10px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        min-width: fit-content;
+    }
+}
+
+.card {
+    background-color: $white;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: $borderradius-sm;
+
+    .card-body {
+        padding: 2.5rem;
+
+        .card-icon {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            // border: 1px solid #ccc;
+            box-shadow: inset 5px 5px 6px #d0d0d0,
+            inset -5px -5px 6px #f0f0f0;
+            margin-bottom: 3rem;
+            line-height: 100px;
+            box-sizing: content-box;
+
+            i {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                font-size: 2.5rem;
+            }
+        }
+
+        .card-text {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+section {
+    display: flex;
+    align-items: center;
+
+    &.vh-75 {
+        height: 75vh;
+    }
+}
+    
+.title {
+    // font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-bottom: 0.625rem;
+    text-transform: uppercase;
+}
+
+.social {
+    position: relative;
+    box-shadow: 4px 4px 7px #d6d8db, -4px -4px 7px #ffffff;
+
+    ul {
+        position: absolute;
+        right: 3%;
+        margin: auto;
+        list-style: none;
+
+        li {
+            padding-left: 0;
+
+            a {            
+                margin: .75rem 0;
+            }
+        }
+    }
+}
+
+.tx-justify {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.page--title {
+    position: relative;
+    height: 75vh;
+    
+    .title {
+        font-size: 50px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        width: 65%;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+}
+
+
+/* ====================================
+   4. Header
+   ==================================== */
+
+.navbar {
+    padding: 1rem 0;
+    background-color: $white;
+    border-bottom: 1px dashed #ccc;
+
+    .brand {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    #menu {
+        justify-content: end;
+
+        .nav-link {
+            padding: 0 1rem;
+            font-size: 14px;
+            color: inherit;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+// Section
+
+.home-section {
+    height: 100vh;
+}
+
+.about {
+    margin-bottom: 100px;
+
+    h5 {
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+
+    img {
+        height: 600px;
+        width: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #d6d8db, -2px -2px 4px #ffffff;
+    }
+}
+
+.project {
+    // height: 75vh;
+    // overflow-y: scroll;
+    // border-top: 1px solid $dark_grey;
+    margin-bottom: 50px;
+
+    .project-list {
+        border-bottom: 1px solid #ccc;
+        transition: .5s ease-in-out;
+
+        .project-list-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+    
+            h1 {
+                margin-bottom: 0;
+            }
+        
+            p {
+                margin-bottom: 0;
+            }
+    
+            button {
+                transform: rotate(0deg);
+                transition: .5s ease-in-out;
+            }
+        }
+
+        .project-list-body {
+            padding: 20px 15px;
+
+            .row {
+                align-items: flex-start;
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    
+        &:hover {
+            // border-bottom: 1px solid #b6b7b9;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px #d6d8db, -2px -2px 4px #ffffff;
+            transition: .5s ease-in-out;
+        }
+    }
+}
+
+.line {
+    position: relative;
+
+    .line1 {
+        position: fixed;
+        left: 25%;
+        top: 0%;
+        border-right: 1px dashed #ccc;
+        height: 100%;
+    }
+
+    .line2 {
+        position: fixed;
+        left: 50%;
+        top: 0%;
+        border-right: 1px dashed #ccc;
+        height: 100%;
+    }
+
+    .line3 {
+        position: fixed;
+        left: 75%;
+        top: 0%;
+        border-right: 1px dashed #ccc;
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .btn {
+        min-width: 150px;
+    }
+    
+    .title {
+      div {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            margin-bottom: .5rem;
+        }
+      }
+    }
+  }
