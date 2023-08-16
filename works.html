@@ -18,29 +18,41 @@
 
   <body>
 
-    <header class="navbar fixed-top">
-        <div class="container">
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#azmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <div id="azmenu" class="collapse navbar-collapse">
-                <div class="navbar-nav menu__left">
-                    <a href="/" class="brand">azri</a>
-                </div>
-                <div class="right__menu">
-                    <a href="/about.html" class="me-lg-3">About</a>
-                    <a href="works.html" class="me-lg-3">Works</a>
-                    <a href="/contact.html">Contact</a>
-                </div>
-            </div>
+    <div class="preloader">
+      <div class="container">
+        <div class="title">
+          <h1>AZRI ZABIDI</h1>
+          <p>FRONT END DEVELOPER | WEB DESIGNER</p>
         </div>
+      </div>
+    </div>
+
+    <header class="navbar fixed-top">
+      <div class="container">
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#azmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div id="menu" class="collapse navbar-collapse">
+          <div>
+              <a href="/" class="me-lg-3">Home</a>
+              <a href="/about.html" class="me-lg-3">About</a>
+              <a href="works.html" class="me-lg-3">Works</a>
+              <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
     </header>
+
+    <div class="main-bg">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
 
     <section class="vh-75">
         <div class="container">
             <div class="title text-center">
                 <h1>PROJECTS. </h1>
-                <p>WEB DESIGNER | FRONTEND DEVELOPER</p>
+                <p>DEDICATION AND PRIDE</p>
             </div>
         </div>
     </section>
@@ -688,53 +700,10 @@
         </div>
     </section>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <script src="/js/main.js"></script>
-
-    <script>
-        var contents = [{
-    employer: "Synergy ESCO (M)",
-    year: "2022",
-    system: "Intrack Light",
-    client: "internal",
-    scope: "UI/UX, Frontend Dev",
-    launched: "May 2022",
-    tech1: "HTML",
-    tech2: "CSS",
-    tech3: "Js",
-    tech4: "Laravel",
-    about: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sunt aspernatur placeat doloremque debitis maiores recusandae suscipit vitae iure numquam accusantium a qui expedita iste aliquid quam, repudiandae velit. Eius!",
-},{
-    employer: "Synergy ESCO (M)",
-    year: "2021",
-    system: "Intrack Light",
-    client: "internal",
-    scope: "UI/UX, Frontend Dev",
-    launched: "May 2022",
-    tech1: "HTML",
-    tech2: "CSS",
-    tech3: "Js",
-    tech4: "Laravel",
-    about: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sunt aspernatur placeat doloremque debitis maiores recusandae suscipit vitae iure numquam accusantium a qui expedita iste aliquid quam, repudiandae velit. Eius!",
-}];
-
-
-$("button[id^=project__list__]").click(function() {
-    var content = contents[this.id.substring(15) - 1];
-    $(".project__list__title div p .employer").html(content.employer);
-    $(".project__list__title div p .year").html(content.year);
-    $(".project__list__title h1").html(content.system);
-    $(".project__list__body .client").html(content.client);
-    $(".project__list__body .scope").html(content.scope);
-    $(".project__list__body .launched").html(content.launched);
-    $(".project__list__body .tech1").html(content.tech1);
-    $(".project__list__body .tech2").html(content.tech2);
-    $(".project__list__body .tech3").html(content.tech3);
-    $(".project__list__body .tech4").html(content.tech4);
-});
-    </script>
   </body>
 </html>
