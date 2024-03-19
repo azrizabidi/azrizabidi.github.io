@@ -271,7 +271,7 @@ footer #n-7 {
 }
 
 body {
-  background: url("/images/bg/BG.png") repeat-y top right;
+  background: url("images/bg/BG.png") repeat-y top right;
   background-size: cover;
   font-family: Montserrat Alternates;
 }
@@ -506,7 +506,7 @@ body {
 }
 #fourth-section .home {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/bg/gallery-001.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg/gallery-001.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -571,19 +571,19 @@ body {
   }
 }
 #fourth-section .about {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/bg/gallery-002.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg/gallery-002.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 #fourth-section .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/bg/gallery-003.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg/gallery-003.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 #fourth-section .work {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/bg/gallery-003.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg/gallery-003.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
