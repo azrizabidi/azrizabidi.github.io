@@ -14,7 +14,7 @@ header .navbar .navbar-nav {
   align-items: center;
 }
 header.header-scrolled .navbar {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #5e69ff;
   transition: 0.5s ease-in-out;
 }
 header.header-scrolled .navbar .navbar-brand img {
@@ -271,7 +271,7 @@ footer #n-7 {
 }
 
 body {
-  background: url("../images/bg/BG.png") repeat-y top right;
+  background: url("/images/bg/BG.png") repeat-y top right;
   background-size: cover;
   font-family: Montserrat Alternates;
 }
@@ -317,7 +317,7 @@ body {
   background-color: #fef9f6;
 }
 #second-section .second-sec-left {
-  background: url("../images/bg/Banner-03.png") no-repeat top center;
+  background: url("/images/bg/Banner-03.png") no-repeat top center;
   background-size: cover;
 }
 #second-section .second-sec-right {
@@ -332,7 +332,7 @@ body {
   text-align: left;
 }
 #second-section .second-sec-right .we-build {
-  background: url("../images/bg/Group_57.png") center no-repeat;
+  background: url("/images/bg/Group_57.png") center no-repeat;
   background-size: contain;
   width: 250px;
   height: 250px;
@@ -506,7 +506,7 @@ body {
 }
 #fourth-section .home {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg/gallery-001.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/bg/gallery-001.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -571,19 +571,19 @@ body {
   }
 }
 #fourth-section .about {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg/gallery-002.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/bg/gallery-002.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 #fourth-section .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg/gallery-003.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/bg/gallery-003.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 #fourth-section .work {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg/gallery-003.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/bg/gallery-003.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
