@@ -25,6 +25,10 @@ a:hover {
   color: #333;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
 strong {
   font-weight: bold;
 }
@@ -75,6 +79,25 @@ strong {
 }
 .btn.btn-menu:hover {
   box-shadow: none;
+}
+
+.project-co-selection {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.project-co-selection .btn {
+  min-width: 175px;
+  box-shadow: 4px 4px 7px #d6d8db, -4px -4px 7px #ffffff;
+}
+.project-co-selection .btn:last-child {
+  border-right: none;
+}
+.project-co-selection .btn:hover {
+  border: 2px solid #333;
+}
+.project-co-selection .btn.active {
+  border: 2px solid #333;
 }
 
 nav #menu {
